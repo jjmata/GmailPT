@@ -3,3 +3,5 @@ storage
 .env
 poetry.lock
 .DS_Store
+token.json
+credentials.json
