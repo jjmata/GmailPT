@@ -1,3 +1,10 @@
+# uncomment the following lines to enable logging
+# import sys
+# import logging
+
+# logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+# logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
+
 from typing import List
 
 from fastapi.responses import StreamingResponse
@@ -10,7 +17,6 @@ from llama_index.llms.base import MessageRole, ChatMessage
 from pydantic import BaseModel
 
 chat_router = r = APIRouter()
-
 
 class _Message(BaseModel):
     role: MessageRole
