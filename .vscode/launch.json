@@ -1,0 +1,25 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: <https://go.microsoft.com/fwlink/?linkid=830387>
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "GmailPT",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/backend",
+      "module": "__main__",
+      "python": "/Users/jjmata/Library/Caches/pypoetry/virtualenvs/llamaindex-fastapi-streaming-TjTYA9hD-py3.11/bin/python",
+      "args": [
+        "main.py"
+      ],
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "console": "integratedTerminal",
+      "env": {
+        "OPENAI_API_KEY": "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"
+      }
+    }
+  ]
+}
