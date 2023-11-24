@@ -2,7 +2,13 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+    <div className="z-10 max-w-5xl w-full items-start justify-between font-mono text-sm lg:flex">
+      <Image
+        src="https://files.123inventatuweb.com/36/5e/365e3895-6011-48d5-990b-8a8151d913d4.jpeg"
+        alt="JPA Logo"
+        width={50}
+        height={50}
+      />
       <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
         Get started by editing&nbsp;
         <code className="font-mono font-bold">app/page.tsx</code>
