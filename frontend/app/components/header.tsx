@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="z-10 max-w-5xl w-full items-start justify-between font-mono text-sm lg:flex">
       <Image
-        src="https://files.123inventatuweb.com/36/5e/365e3895-6011-48d5-990b-8a8151d913d4.jpeg"
+        src="/images/jpa-logo.jpeg"
         alt="JPA Logo"
         width={50}
         height={50}
