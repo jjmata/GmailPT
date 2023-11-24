@@ -35,14 +35,14 @@ callback_handler = OpenInferenceTraceCallbackHandler()
 # LlamaIndex application initialization may vary
 # depending on your application
 service_context = ServiceContext.from_defaults(
-#    llm_predictor=LLMPredictor(llm=ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key="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",temperature=0)),
+#    llm_predictor=LLMPredictor(llm=ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)),
     llm=OpenAI(model="gpt-3.5-turbo"),
     embed_model=OpenAIEmbedding(model="text-embedding-ada-002"),
     callback_manager=CallbackManager(handlers=[callback_handler]),
 )
 
 # View the traces in the Phoenix UI
-px.active_session().url
+# px.active_session().url
 
 def get_index():
     logger = logging.getLogger("uvicorn")
